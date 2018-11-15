@@ -10,7 +10,7 @@ namespace appvectores
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("control de versiones ");
+            Console.WriteLine("control de versiones kl");
             Console.ReadKey();
         }
     }
