@@ -21,6 +21,7 @@ namespace appvectores
                 Console.WriteLine("error :" + ex.Message.ToString());
             }
             Console.WriteLine("2 elevado a la 5 es igual a {0}", potencia(2, 5));
+            vectorinicial ();
 
             Console.ReadKey();
         }
@@ -42,7 +43,33 @@ namespace appvectores
             }
             return p;
         }
-       
+       public static void vectorinicial (){
+            
+            int [] x=new int[8];
+            x[0]=10;
+            x[1]=10;
+            x[2]=10;
+            x[3]=10;
+            x[4]=10;
+            x[5]=10;
+            x[6]=10;
+            x[7]=10;
+            Console.WriteLine ("\nElEmentos del vector\n=====================");
+            for (int i=0;i<8;i++){
+                
+                Console.WriteLine("elemento indice {0} --> {1}", (i + 1), x[i]);
+
+            }
+
+            int s=0;
+            for (int i=0;i<x.Length;i++){
+                s+=x[i];
+
+            }
+            Console.WriteLine ("la sumatoria es {0}", s );
+                Console.WriteLine("el pro,edio es  {0}", (double )s/x.Length );
+}
+
         
            
 
