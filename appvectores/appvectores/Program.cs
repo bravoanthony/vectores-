@@ -22,6 +22,11 @@ namespace appvectores
             }
             Console.WriteLine("2 elevado a la 5 es igual a {0}", potencia(2, 5));
             vectorinicial ();
+            
+            Tarea();
+            Console.WriteLine("El numero mayor es: " + mayor);
+
+			Console.WriteLine("El numero menor es: " + menor);
 
             Console.ReadKey();
         }
@@ -70,7 +75,67 @@ namespace appvectores
                 Console.WriteLine("el pro,edio es  {0}", (double )s/x.Length );
 }
 
-        
+        public static void Tarea()
+
+		{
+
+			int[] ve = new int[10];
+
+			int mayor = ve[0], menor = ve[0];
+
+
+			for (int i = 0; i < ve.Length; i++)
+
+			{
+
+				while (ve[i] < 1 || ve[i] > 1000)
+
+				{
+
+					Console.WriteLine("Ingrese un valor {0} ", i + 1);
+
+					ve[i] = Int32.Parse(Console.ReadLine());
+
+				}
+
+
+			}
+
+			for (int i = 0; i < ve.Length; i++)
+
+			{
+
+				if (ve[i] > mayor)
+
+				{
+
+					mayor = ve[i];
+
+				}
+
+			}
+
+			menor = mayor;
+
+			for (int i = 0; i < ve.Length; i++)
+
+			{
+
+				if (ve[i] < menor)
+
+				{
+
+					menor = ve[i];
+
+				}
+
+			}
+
+            
+
+			
+            Console.ReadKey ();
+		}
            
 
         
